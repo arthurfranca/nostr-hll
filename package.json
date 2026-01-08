@@ -1,0 +1,38 @@
+{
+  "name": "nostr-hll",
+  "author": "Arthur França - nostr:npub1l3cgtsurhfchg4cyhhqudm70074sr96srhje330xc5m6czej5n9s9q6vs2",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "NIP-45 HyperLogLog implementation in Javascript",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:arthurfranca/nostr-hll.git"
+  },
+  "type": "module",
+  "exports": {
+    "./hyperloglog.js": "./hyperloglog.js",
+    "./nip45.js": "./nip45.js"
+  },
+  "files": [
+    "hyperloglog.js",
+    "nip45.js",
+    "README.md"
+  ],
+  "keywords": [
+    "nostr",
+    "nip45",
+    "hyperloglog",
+    "hll",
+    "cardinality",
+    "counting"
+  ],
+  "scripts": {
+    "test": "node --test 'tests/**/*.test.js'",
+    "test:only": "node --test --test-only 'tests/**/*.test.js'"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "neostandard": "^0.12.2"
+  }
+}
